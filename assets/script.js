@@ -48,10 +48,7 @@ $('.saveBtn').on('click', function(){
 
 
 //displays time in the top of the doc
-var advancedFormat = require('dayjs/plugin/advancedFormat');
-dayjs.extend(advancedFormat);
-
-var currentDay = dayjs().format('dddd, MMMM Do');
+var currentDay = dayjs().format('dddd, MMMM DD');
 $('#currentDay').text(currentDay);
 
 
