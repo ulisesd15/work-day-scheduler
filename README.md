@@ -1,7 +1,7 @@
-# work-day-scheduler
+# Work day scheduler
 
 ## User Story
-As a bootcamp student, I want to correctly build a JavaScript timed quiz with its appropiate functions and limitations. So that I could be ready to compete in the professional setting
+As a user, I want to be able to see the current day at the top of the website, I want to type in my todos and save them on the page until changed, and each block should change background color depending on the time of the day
 
 ## Acceptance Criteria
 GIVEN I am using a daily planner to create a schedule
@@ -18,11 +18,12 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-## Website URL
+## Webpage URL
+https://ulisesd15.github.io/work-day-scheduler/
 
-### Webpage Screenshot
-
-### How to access files
+## Webpage Screenshot
+![Alt text](assets/images/WDS.png)
+## How to Access Files
 work-day-scheduler/assets/style.css
 work-day-scheduler/assets/script.css
 work-day-scheduler/index.html
