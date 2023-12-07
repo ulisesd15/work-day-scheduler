@@ -9,8 +9,8 @@ $('.saveBtn').on('click', function(){
     } else {
         localStorage.setItem(timeId,input);
         displayInput();
-    }
-})
+    };
+});
         
     
 //gets local storage items and places it on html
@@ -44,7 +44,7 @@ $('.saveBtn').on('click', function(){
                 $(this).addClass('future');
             }
         });
-    }
+    };
 
 
 //displays time in the top of the doc
