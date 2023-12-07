@@ -12,16 +12,28 @@ $(function () {
             return;
         } else {
             localStorage.setItem(timeId,input);
-        }
-    })
-    function displayTaks {
-        var tasks = JSON.parse(localStorage.getItem(timeId));
+            displayInput();
 
-        if (tasks) {
-            $(timeId).child('.description').val().empty();
-            $(timeId).child('.description').text("tasks");
-        }
-    }
+        };
+        
+    });
+    
+    function displayInput() {
+        var timeId = $('.time-block').siblings().attr('id');
+        var tasks = localStorage.getItem(timeId);
+        var textArea = $(timeId).child('.description').val();
+        var containers = $('.time-block');
+        
+
+        containers.forEach(function(){
+            textArea.textContent = tasks;
+        })
+            
+        };
+
+    
+        
+    
 
     
 
@@ -61,6 +73,7 @@ $('#currentDay').text(currentDay);
 
 
 addBackgroundColor();
+displayTaks();
 });
 
   
