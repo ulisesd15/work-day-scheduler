@@ -25,26 +25,26 @@ $('.saveBtn').on('click', function(){
     $('#hour-5 .description').val(localStorage.getItem('hour-5'));    
     
 //changes background of the blocks depending on the time
-    function addBackgroundColor() {
-        var currentHour = dayjs().hour();
+function addBackgroundColor() {
+    var currentHour = dayjs().hour();
     
-        $('.time-block').each(function () {
-            var timeId = parseInt($(this).attr('id').split("hour")[1]);
+    $('.time-block').each(function () {
+        var timeId = parseInt($(this).attr('id').split('hour')[1]);
     
-            if (currentHour > timeId) {
-                $(this).removeClass('future');
-                $(this).removeClass('present');
-                $(this).addClass('past');
-            } else if (currentHour >= timeId) {
-                $(this).removeClass('future');
-                $(this).addClass('present');
-            } else {
-                $(this).removeClass('present');
-                $(this).removeClass('past');
-                $(this).addClass('future');
-            }
-        });
-    };
+        if (currentHour > timeId) {
+            $(this).removeClass('future');
+            $(this).removeClass('present');
+            $(this).addClass('past');
+        } else if (currentHour === timeId) {
+            $(this).removeClass('future');
+            $(this).addClass('present');
+        } else {
+            $(this).removeClass('present');
+            $(this).removeClass('past');
+            $(this).addClass('future');
+        }
+    });
+}
 
 
 //displays time in the top of the doc
@@ -55,4 +55,3 @@ $('#currentDay').text(currentDay);
 addBackgroundColor();
 });
 
-  
