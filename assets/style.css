@@ -3,10 +3,6 @@ body {
     font-size: 16px;
   }
   
-header {
-    
-}
-
   textarea {
     background: transparent;
     border: none;
@@ -16,12 +12,18 @@ header {
     padding: 10px;
   }
   
+  .headerDisplay {
+    text-align: center;
+    border-bottom: 5px solid black;
+  }
+
   .description {
     white-space: pre-wrap;
   }
   
   .time-block {
     border-radius: 15px;
+    text-align: center;
   }
   
   .row {
