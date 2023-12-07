@@ -22,7 +22,7 @@ THEN the saved events persist
 https://ulisesd15.github.io/work-day-scheduler/
 
 ## Webpage Screenshot
-![Alt text](assets/images/WDS.png)
+![Alt text](assets/images/WDSproof.png)
 ## How to Access Files
 work-day-scheduler/assets/style.css
 work-day-scheduler/assets/script.css
