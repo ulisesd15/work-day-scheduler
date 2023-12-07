@@ -1,2 +1,28 @@
 # work-day-scheduler
-work day scheduler 9am-5pm
+
+## User Story
+As a bootcamp student, I want to correctly build a JavaScript timed quiz with its appropiate functions and limitations. So that I could be ready to compete in the professional setting
+
+## Acceptance Criteria
+GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with time blocks for standard business hours of 9am to 5pm
+WHEN I view the time blocks for that day
+THEN each time block is color-coded to indicate whether it is in the past, present, or future
+WHEN I click into a time block
+THEN I can enter an event
+WHEN I click the save button for that time block
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events persist
+
+## Website URL
+
+### Webpage Screenshot
+
+### How to access files
+work-day-scheduler/assets/style.css
+work-day-scheduler/assets/script.css
+work-day-scheduler/index.html
